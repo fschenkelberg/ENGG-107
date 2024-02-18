@@ -1,0 +1,37 @@
+**** Node2vec (Parameters:  dim32) ****
+
+------ Train on:  ['theia']  Test on:  fivedirections
+Accurracies Logistic Regression=0.4941860465116279, Decision Tree=0.5
+
+------ Train on:  ['trace']  Test on:  cadets
+Accurracies Logistic Regression=0.5547025692462001, Decision Tree=0.5302445798935267
+
+------ Train on:  ['trace']  Test on:  theia
+Accurracies Logistic Regression=0.5228941343648852, Decision Tree=0.5175061182600458
+
+------ Train on:  ['theia']  Test on:  trace
+Accurracies Logistic Regression=0.6018144862170262, Decision Tree=0.48112815643452717
+
+------ Train on:  ['trace', 'fivedirections', 'cadets']  Test on:  theia
+Accurracies Logistic Regression=0.5161245756690613, Decision Tree=0.5260322096786927
+
+
+
+**** GraphSage (Parameters:  dim32_seed5_lr001_epochs300) ****
+
+------ Train on:  ['theia']  Test on:  fivedirections
+Accurracies Logistic Regression=0.6453488372093024, Decision Tree=0.6511627906976745
+
+------ Train on:  ['trace']  Test on:  cadets
+Accurracies Logistic Regression=0.5008101226757194, Decision Tree=0.4977625183242034
+
+------ Train on:  ['trace']  Test on:  theia
+Accurracies Logistic Regression=0.8473198073734902, Decision Tree=0.8659311597063235
+
+------ Train on:  ['theia']  Test on:  trace
+Accurracies Logistic Regression=0.9969288745141094, Decision Tree=0.4919957864751788
+
+------ Train on:  ['trace', 'fivedirections', 'cadets']  Test on:  theia
+Accurracies Logistic Regression=0.9395081708376095, Decision Tree=0.43562011526012473
+
+
