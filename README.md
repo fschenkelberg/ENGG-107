@@ -26,3 +26,51 @@ In this problem set, I will be creating a project outline and a video pitch to p
 - Broader impacts
 
 5. Upload the Video and Script: Once completed, I will upload both the video and script to Canvas for evaluation.
+
+## Operational Instructions:
+### Installation of Miniconda:
+Download Miniconda installation script:
+```bash
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+Change the script permissions:
+```bash
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+```
+Execute the installation script:
+```bash
+./Miniconda3-latest-Linux-x86_64.sh
+```
+Environment Setup:
+Create the environment using the provided configuration file:
+```bash
+conda env create -f environment.yaml
+Activate the created environment:
+```
+```bash
+conda activate engg-107
+```
+### Graph Dimension Reduction:
+Navigate to the directory containing the code:
+```bash
+cd ./scratch/f006dg0/mcas-gmra/pymm-gmra/experiments
+```
+Execute the first Python script to build the cover tree and process the provenance graph:
+```bash
+python ./graphs/covertree_build.py ./graphs/results --data_file ./graphs/n2v/{trace_test_32}.txt
+```
+Run the second Python script to execute the GMRA algorithm and generate low-dimensional embeddings:
+```bash
+python ./graphs/dram/gmra.py ./graphs/results/{target}_covertree.json
+```
+### Link Prediction:
+Convert the input data to pickle format:
+```bash
+python provenance/link_prediction/src/convert_darpatc.py
+```
+Execute the link prediction script:
+```bash
+python provenance/link_prediction/src/link_pred_node2vec.py
+```
+### Anomaly Detection:
+Note: To be completed
