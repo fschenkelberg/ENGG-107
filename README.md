@@ -45,8 +45,8 @@ Environment Setup:
 Create the environment using the provided configuration file:
 ```bash
 conda env create -f environment.yaml
-Activate the created environment:
 ```
+Activate the created environment:
 ```bash
 conda activate engg-107
 ```
@@ -55,7 +55,7 @@ Navigate to the directory containing the code:
 ```bash
 cd ./scratch/f006dg0/mcas-gmra/pymm-gmra/experiments
 ```
-Execute the first Python script to build the cover tree and process the provenance graph:
+Execute the first Python script to build the cover tree:
 ```bash
 python ./graphs/covertree_build.py ./graphs/results --data_file ./graphs/n2v/{trace_test_32}.txt
 ```
