@@ -1,3 +1,6 @@
 [submodule "mcas-gmra"]
 	path = mcas-gmra
 	url = https://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@github.com/BU-Lisp/mcas-gmra.git
+[submodule "pytorch"]
+	path = pytorch
+	url = https://github.com/pytorch/pytorch.git
